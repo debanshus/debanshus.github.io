@@ -1,2 +1,2 @@
 # debanshus.github.io
-Testing Github's Personal Portfolio Service
+Online updated resume hosted using Github's online static website hosting service.
