@@ -4,17 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debanshu Saha - Software Engineer</title>
-  <meta name="description" content="Debanshu Saha is a Software Engineer specialising in custom enterprise web applications and serverless products in Node.js, TypeScript and AWS." />
+  <title>Debanshu Saha — Technical Lead & Senior Software Engineer</title>
+  <meta name="description"
+    content="Debanshu Saha is a Technical Lead and Senior Software Engineer with 13+ years of experience building scalable enterprise systems in JS/TS & Java stacks, leveraging AI-assisted development with rigorous human verification. Available for freelancing." />
   <meta name="author" content="Debanshu Saha" />
-  <meta property="og:title" content="Debanshu Saha - Software Engineer" />
-  <meta property="og:description" content="Debanshu Saha is a Software Engineer specialising in custom enterprise web applications and serverless products." />
+  <meta property="og:title" content="Debanshu Saha — Technical Lead & Senior Software Engineer" />
+  <meta property="og:description"
+    content="Technical Lead with 13+ years building distributed enterprise applications across JS/TS and Java ecosystems. Fast delivery via AI-assisted engineering with precision human verification. Open for freelance projects." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://debanshusaha.com/" />
   <meta property="og:image" content="https://debanshusaha.com/assets/photo.jpeg" />
   <link rel="canonical" href="https://debanshusaha.com/" />
   <link rel="stylesheet" href="./fonts/fonts.css" />
   <link rel="stylesheet" href="./css/styles.min.css" />
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
 </head>
 
 <body>
@@ -25,14 +38,60 @@
         <a href="#top" class="logo">
           Debanshu Saha
         </a>
-        <nav class="nav-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#work" class="nav-link">Work</a>
-          <a href="./assets/debanshu_saha_resume.pdf" target="_blank" rel="noreferrer" class="nav-link">Resume</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </nav>
+        <div class="header-right">
+          <nav class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#approach" class="nav-link">Approach</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#work" class="nav-link">Work</a>
+            <a href="./assets/debanshu_saha_resume.pdf" target="_blank" rel="noreferrer" class="nav-link">Resume</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+          <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle dark mode">
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle mobile menu"
+            aria-expanded="false">
+            <svg class="menu-open-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="menu-close-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
+      <!-- Mobile Drawer Nav -->
+      <nav id="mobile-nav" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#approach" class="mobile-nav-link">Approach</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#work" class="mobile-nav-link">Work</a>
+        <a href="./assets/debanshu_saha_resume.pdf" target="_blank" rel="noreferrer" class="mobile-nav-link">Resume</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
     </header>
 
     <main id="top" class="main-content">
@@ -41,29 +100,35 @@
         <div class="hero-grid">
           <div class="hero-text">
             <p class="hero-subtitle">
-              Software Engineer · 13+ years
+              Technical Lead · 13+ Years Experience · Freelance Ready
             </p>
             <h1 class="hero-title">
-              Building durable
+              Engineering robust
               <br />
               <span class="highlight-italic">enterprise systems</span>
               <br />
-              from the API up.
+              across Node/TypeScript &amp; Java.
             </h1>
             <p class="hero-description">
-              I'm Debanshu Saha — a software engineer specialising in custom enterprise web applications.
-              Currently Execution & Technology Lead at
-              <a href="https://www.2pirad.com" target="_blank" rel="noreferrer" class="highlight-link">
-                TwoPiRadian Infotech
-              </a>
-              , shipping serverless products in Node.js, TypeScript and AWS.
+              I'm Debanshu Saha — Technology Lead / Lead Software Engineer currently associated with
+              <a href="https://www.2pirad.com" target="_blank" rel="noreferrer" class="highlight-link">TwoPiRadian
+                Infotech</a>
+              and an independent software engineering and solution architect and consultant. I build and scale
+              distributed
+              platforms across
+              <strong>Node.js / TypeScript</strong>, <strong>Java / Spring Boot</strong>, and <strong>AWS
+                Cloud</strong>.
+            </p>
+            <p class="hero-description" style="margin-top: 1rem;">
+              Passionate about <strong>AI-assisted development</strong> for rapid velocity, combined with deep
+              architectural discipline and meticulous human verification of every line of code.
             </p>
             <div class="hero-actions">
               <a href="#work" class="btn btn-primary">
-                See selected work <img src="./assets/arrow-up-right.svg" class="icon-small" alt="" />
+                View selected work <img src="./assets/arrow-up-right.svg" class="icon-small" alt="" />
               </a>
               <a href="#contact" class="btn btn-outline">
-                Get in touch
+                Hire for freelance / consulting
               </a>
             </div>
           </div>
@@ -78,18 +143,43 @@
         <h2 class="section-title">About</h2>
         <article class="about-content">
           <p>
-            Seasoned software engineering professional with hands-on experience developing
-            enterprise-scale web applications, active across every phase of the software lifecycle —
-            from planning to support and maintenance.
+            Technical Lead, Manager, and Senior Software Engineer with <strong>13+ years of experience</strong> building
+            enterprise applications and distributed systems from scratch. I partner closely with clients and product
+            teams across the UK, US, Canada, and Europe — translating intricate business requirements into scalable,
+            resilient technical solutions.
           </p>
           <p>
-            I like learning new technologies and spinning up proof-of-concepts as part of feasibility
-            studies. An adept team player with strong team-management, communication and client-handling
-            experience.
+            My core strength is bilingual full-stack engineering: deep architectural fluency in both the modern
+            <strong>JavaScript / TypeScript ecosystem</strong> (Node.js, Express, React, Serverless Framework) and the
+            battle-tested <strong>Java ecosystem</strong> (Spring Boot, Hibernate, distributed data pipelines).
           </p>
           <p>
-            Currently building serverless applications with Node.js, TypeScript and AWS using the
-            Serverless Framework.
+            Beyond full-time leadership, <strong>I actively take on high-impact freelance projects and consulting
+              engagements</strong> — helping startups and enterprises design architectures, ship MVPs, modernize legacy
+            systems, or optimize cloud infrastructures.
+          </p>
+        </article>
+      </section>
+
+      <!-- Approach / AI-Assisted -->
+      <section id="approach" class="section about-section">
+        <h2 class="section-title">How I Build</h2>
+        <article class="about-content">
+          <p>
+            <strong>AI-Accelerated Velocity with Rigorous Human Verification:</strong>
+            I heavily integrate state-of-the-art AI coding tools (Antigravity, Cursor, Copilot) into my daily
+            development workflow. This unlocks 3–5x faster turnaround for prototypes, boilerplates, and feature
+            implementations.
+          </p>
+          <p>
+            However, speed is never traded for quality. Every single line of code, data flow, API contract, and edge
+            case undergoes <strong>strict human inspection, comprehensive testing, and architectural
+              validation</strong>. The result: rapid time-to-market without compromising reliability, security, or
+            maintainability.
+          </p>
+          <p>
+            <strong>End-to-End Leadership:</strong> From technical business analysis (BRD/FRD alignment, user stories,
+            estimation) and Scrum Master ceremonies to hands-on architecture, code reviews, and AWS cloud deployment.
           </p>
         </article>
       </section>
@@ -101,40 +191,103 @@
           <div class="skills-content">
 
             <dl class="skill-group">
-              <dt class="skill-group-label">JS / TS Stack</dt>
+              <dt class="skill-group-label">JS / TS Stack (Frontend &amp; Backend)</dt>
               <dd class="skill-tags">
                 <span class="skill-tag">TypeScript</span>
                 <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">Node.js</span>
                 <span class="skill-tag">Express.js</span>
-                <span class="skill-tag">Serverless</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Serverless Framework</span>
                 <span class="skill-tag">TypeORM</span>
                 <span class="skill-tag">DrizzleORM</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">Jest</span>
                 <span class="skill-tag">Mocha</span>
                 <span class="skill-tag">Chai</span>
-                <span class="skill-tag">Jest</span>
               </dd>
             </dl>
 
             <dl class="skill-group">
-              <dt class="skill-group-label">Java Stack</dt>
+              <dt class="skill-group-label">Java Stack &amp; Data Engineering</dt>
               <dd class="skill-tags">
-                <span class="skill-tag">Spring</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
                 <span class="skill-tag">Hibernate</span>
+                <span class="skill-tag">Scala</span>
                 <span class="skill-tag">Maven</span>
                 <span class="skill-tag">Gradle</span>
+                <span class="skill-tag">JUnit</span>
+                <span class="skill-tag">Struts &amp; JDBC</span>
+                <span class="skill-tag">Data Connectors</span>
               </dd>
             </dl>
 
             <dl class="skill-group">
-              <dt class="skill-group-label">AWS Cloud</dt>
+              <dt class="skill-group-label">Messaging &amp; Event Streaming</dt>
               <dd class="skill-tags">
-                <span class="skill-tag">S3</span>
-                <span class="skill-tag">RDS</span>
-                <span class="skill-tag">DynamoDB</span>
-                <span class="skill-tag">Lambda</span>
-                <span class="skill-tag">Cognito</span>
+                <span class="skill-tag">Apache Kafka</span>
+                <span class="skill-tag">RabbitMQ</span>
+                <span class="skill-tag">AWS SNS / SQS</span>
+                <span class="skill-tag">Event-Driven Architecture</span>
+              </dd>
+            </dl>
+
+            <dl class="skill-group">
+              <dt class="skill-group-label">AWS Cloud &amp; Infrastructure</dt>
+              <dd class="skill-tags">
+                <span class="skill-tag">AWS Lambda</span>
                 <span class="skill-tag">API Gateway</span>
+                <span class="skill-tag">Cognito</span>
+                <span class="skill-tag">S3</span>
+                <span class="skill-tag">RDS (MySQL)</span>
+                <span class="skill-tag">DynamoDB</span>
+                <span class="skill-tag">CloudFront</span>
+                <span class="skill-tag">ECS / EKS</span>
+                <span class="skill-tag">ElastiCache (Redis)</span>
+                <span class="skill-tag">GitHub Actions (CI/CD)</span>
+              </dd>
+            </dl>
+
+            <dl class="skill-group">
+              <dt class="skill-group-label">Databases &amp; Caching</dt>
+              <dd class="skill-tags">
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">DynamoDB</span>
+                <span class="skill-tag">MongoDB</span>
+              </dd>
+            </dl>
+
+            <dl class="skill-group">
+              <dt class="skill-group-label">AI Coding &amp; Engineering Tools</dt>
+              <dd class="skill-tags">
+                <span class="skill-tag">Antigravity</span>
+                <span class="skill-tag">Cursor</span>
+                <span class="skill-tag">GitHub Copilot</span>
+                <span class="skill-tag">AI-Assisted Pair Programming</span>
+                <span class="skill-tag">Automated Testing &amp; Verification</span>
+              </dd>
+            </dl>
+
+            <dl class="skill-group">
+              <dt class="skill-group-label">Third-Party &amp; Enterprise Integrations</dt>
+              <dd class="skill-tags">
+                <span class="skill-tag">Salesforce REST API</span>
+                <span class="skill-tag">Litmos LMS</span>
+                <span class="skill-tag">Airtable API</span>
+                <span class="skill-tag">Data Connectors</span>
+              </dd>
+            </dl>
+
+            <dl class="skill-group">
+              <dt class="skill-group-label">Methodology &amp; Leadership</dt>
+              <dd class="skill-tags">
+                <span class="skill-tag">Agile &amp; Scrum</span>
+                <span class="skill-tag">Technical Business Analysis</span>
+                <span class="skill-tag">Sprint Planning &amp; Grooming</span>
+                <span class="skill-tag">Architecture &amp; Code Review</span>
+                <span class="skill-tag">Team Mentorship</span>
               </dd>
             </dl>
 
@@ -145,26 +298,28 @@
       <!-- Work -->
       <section id="work" class="section work-section">
         <div class="work-header">
-          <h2 class="section-title">Selected work</h2>
-          <p class="work-subtitle">2013 → Now</p>
+          <h2 class="section-title">Selected work &amp; experience</h2>
+          <p class="work-subtitle">2013 → Present</p>
         </div>
         <ol class="projects-list">
 
           <li class="project-item">
             <div class="project-meta">
               <p class="project-number">01</p>
-              <p class="project-period">Oct 2024 — Present</p>
+              <p class="project-period">Apr 2021 — Present</p>
             </div>
             <div class="project-details">
-              <h3 class="project-title">NMap & NSwap</h3>
+              <h3 class="project-title">Real Estate IoT &amp; Connectivity Certification</h3>
               <p class="project-client-role">
-                <a href="https://navozyme.com" target="_blank" rel="noreferrer" class="highlight-link">Navozyme</a>
-                · Barcelona · <span class="italic">Full-Stack Developer & Scrum Master</span>
+                <span class="italic">Technology Lead &amp; Technical Business Analyst</span>
               </p>
               <p class="project-description">
-                NMap is a port call management platform for real-time data exchange between vessels, agents and maritime
-                & port authorities. NSwap is a PWA for waste declaration and disposal receipt management. Leading a
-                backend team of 4 across design, development, code review, estimation, and sprint ceremonies.
+                A global certification workflow platform for the real estate industry evaluating Internet Connectivity
+                and IoT smartness. Architected and developed the serverless backend from scratch using TypeScript,
+                React.js, Express.js, Serverless Framework, Java, Spring Boot, and AWS (API Gateway, Lambda, Cognito,
+                RDS, CloudFront). Engineered REST API integrations with Salesforce, Litmos, and Airtable. Led and
+                mentored a team of 5 developers across solution design, sprint planning, code reviews, and production
+                releases.
               </p>
             </div>
           </li>
@@ -172,18 +327,18 @@
           <li class="project-item">
             <div class="project-meta">
               <p class="project-number">02</p>
-              <p class="project-period">Jul 2020 — Oct 2024</p>
+              <p class="project-period">Apr 2021 — Present</p>
             </div>
             <div class="project-details">
-              <h3 class="project-title">Arca</h3>
+              <h3 class="project-title">Maritime Port Call &amp; Waste Management PWA</h3>
               <p class="project-client-role">
-                <a href="https://wiredscore.com" target="_blank" rel="noreferrer" class="highlight-link">WiredScore</a>
-                · London · <span class="italic">Backend Lead</span>
+                <span class="italic">Technology Lead &amp; Scrum Master</span>
               </p>
               <p class="project-description">
-                A certification platform for real estate based on internet connectivity and IoT smartness. Designed and
-                built the full API layer in Serverless Framework with TypeScript on AWS Lambda, API Gateway and Cognito.
-                Integrated Salesforce, Litmos and Airtable; designed the RDS schema; led a team of 4.
+                NMap is a real-time maritime port call management platform between vessels, agents, and port
+                authorities. NSwap is a progressive web app for maritime waste declaration and disposal receipt
+                management. Led a team of 4 developers across design to production with TypeScript, React.js, Node.js,
+                Express.js, Jest, and AWS (SNS, SQS), while facilitating all Agile ceremonies as Scrum Master.
               </p>
             </div>
           </li>
@@ -191,18 +346,18 @@
           <li class="project-item">
             <div class="project-meta">
               <p class="project-number">03</p>
-              <p class="project-period">Feb 2018 — Jun 2020</p>
+              <p class="project-period">Apr 2017 — Mar 2021</p>
             </div>
             <div class="project-details">
-              <h3 class="project-title">Paxata</h3>
+              <h3 class="project-title">Enterprise BI &amp; AI/ML Data Connectors</h3>
               <p class="project-client-role">
-                <a href="https://datarobot.com" target="_blank" rel="noreferrer" class="highlight-link">DataRobot</a>
-                · US · <span class="italic">Connector Engineer</span>
+                <span class="italic">Senior Software Engineer</span>
               </p>
               <p class="project-description">
-                A data preparation platform for BI and AI/ML tools. Built import/export connectors in Java and Scala for
-                S3, GCS, Google Drive, Snowflake, Redshift, BigQuery, DynamoDB and MongoDB — from feasibility to
-                production, with JUnit & Mockito coverage.
+                An enterprise data preparation platform for BI and AI/ML workloads. Designed and developed
+                high-throughput bidirectional data connectors in Java and Scala across object storage, relational, and
+                NoSQL databases—including AWS S3, DynamoDB, Redshift, Google Cloud Storage, Google Drive, Snowflake, and
+                MongoDB with rigorous JUnit testing.
               </p>
             </div>
           </li>
@@ -210,17 +365,18 @@
           <li class="project-item">
             <div class="project-meta">
               <p class="project-number">04</p>
-              <p class="project-period">Mar 2017 — Jan 2018</p>
+              <p class="project-period">Nov 2014 — Mar 2017</p>
             </div>
             <div class="project-details">
-              <h3 class="project-title">Golpodadu</h3>
+              <h3 class="project-title">Aircraft Turbine Prognostic Life Assessment</h3>
               <p class="project-client-role">
-                <a href="https://2pirad.com" target="_blank" rel="noreferrer" class="highlight-link">2PiRad</a>
-                · In-house · <span class="italic">Full-Stack Developer</span>
+                <span class="italic">Full Stack Developer</span>
               </p>
               <p class="project-description">
-                A story-telling platform for children. Built the server in Java, Spring & Hibernate with an
-                HTML5/CSS3/jQuery/Bootstrap front end.
+                A prognostic life assessment platform for aircraft turbine engines. Developed backend with Java, Spring
+                Boot, Hibernate, Apache Derby, and JUnit; frontend in HTML, CSS, jQuery, and Bootstrap. Gained onsite
+                experience in Ottawa, Canada, managing client requirements gathering, Balsamiq wireframing, testing, and
+                technical support.
               </p>
             </div>
           </li>
@@ -228,38 +384,16 @@
           <li class="project-item">
             <div class="project-meta">
               <p class="project-number">05</p>
-              <p class="project-period">Nov 2014 — Feb 2017</p>
-            </div>
-            <div class="project-details">
-              <h3 class="project-title">XactLIFE</h3>
-              <p class="project-client-role">
-                <a href="https://lifepredictiontech.com/" target="_blank" rel="noreferrer" class="highlight-link">Life
-                  Prediction Tech</a>
-                · Canada · <span class="italic">Full-Stack Developer</span>
-              </p>
-              <p class="project-description">
-                A life assessment platform for turbines used in aero-plane engines. Backend in Java/Spring/Hibernate
-                with Apache Derby; frontend in HTML/CSS/jQuery. Handled requirement gathering, wireframing in Balsamiq,
-                and JUnit testing.
-              </p>
-            </div>
-          </li>
-
-          <li class="project-item">
-            <div class="project-meta">
-              <p class="project-number">06</p>
               <p class="project-period">Aug 2013 — Nov 2014</p>
             </div>
             <div class="project-details">
-              <h3 class="project-title">FinnOne CAS</h3>
+              <h3 class="project-title">Enterprise Loan Acquisition Platform</h3>
               <p class="project-client-role">
-                <a href="https://nucleussoftware.com/" target="_blank" rel="noreferrer" class="highlight-link">Nucleus
-                  Software</a>
-                · In-house · <span class="italic">Developer & Production Support</span>
+                <span class="italic">Software Engineer Trainee</span>
               </p>
               <p class="project-description">
-                A customer acquisition platform for a loan processing system. Development and production support with
-                Java, Struts and JDBC on the backend; HTML, CSS and JavaScript on the front end.
+                Customer acquisition platform for enterprise loan processing. Development, JDBC database integrations,
+                and production support using Java, Struts, JDBC, HTML, CSS, and JavaScript.
               </p>
             </div>
           </li>
@@ -267,24 +401,55 @@
         </ol>
       </section>
 
-      <!-- Contact -->
+      <!-- Certifications & Education -->
+      <section class="section about-section">
+        <h2 class="section-title">Credentials</h2>
+        <article class="about-content">
+          <p>
+            <strong>Certifications:</strong>
+            <br />
+            • AWS Certified Cloud Practitioner (AWS, 2021)
+            <br />
+            • Oracle Certified Java Professional (Oracle, 2015)
+          </p>
+          <p>
+            <strong>Education:</strong>
+            <br />
+            • B.Tech in Information Technology — <a href="https://iem.edu.in/" target="_blank" rel="noreferrer"
+              class="highlight-link">Institute of Engineering and Management</a>
+            <br />
+            • Higher Secondary &amp; Secondary — <a href="https://sxipanihati.org/" target="_blank" rel="noreferrer"
+              class="highlight-link">St. Xavier's Institution</a>
+          </p>
+        </article>
+      </section>
+
+      <!-- Contact / Freelance Callout -->
       <section id="contact" class="section contact-section">
         <div class="contact-grid">
-          <h2 class="section-title">Get in touch</h2>
+          <h2 class="section-title">Let's collaborate</h2>
           <div class="contact-content">
             <p class="contact-text">
-              Open to interesting engineering conversations, collaborations and freelance work on
-              enterprise and serverless platforms.
+              I am actively available for <strong>freelance projects, technical consulting, and advisory roles</strong>.
+              Whether you need an MVP built with speed and precision, a custom serverless architecture on AWS, or
+              high-performance Node.js/Typescript and Java systems, let's talk.
+            </p>
+            <p class="contact-text" style="margin-top: 1rem; font-size: 1rem;">
+              Reach me directly at <a href="mailto:debanshu.saha@gmail.com"
+                class="highlight-link">debanshu.saha@gmail.com</a> or connect via:
             </p>
             <address class="contact-actions" style="font-style: normal;">
-              <a href="https://linkedin.com/in/debanshusaha/" target="_blank" rel="noreferrer" class="btn btn-outline">
+              <a href="https://linkedin.com/in/debanshusaha" target="_blank" rel="noreferrer" class="btn btn-outline">
                 <img src="./assets/linkedin.svg" class="icon-small" alt="" /> LinkedIn
               </a>
               <a href="https://github.com/debanshus" target="_blank" rel="noreferrer" class="btn btn-outline">
                 <img src="./assets/github.svg" class="icon-small" alt="" /> GitHub
               </a>
+              <a href="mailto:debanshu.saha@gmail.com" class="btn btn-outline">
+                ✉ Email me
+              </a>
               <a href="https://wa.me/918981409005" target="_blank" rel="noreferrer" class="btn btn-primary">
-                <img src="./assets/whatsapp.svg" class="icon-small" alt="" /> Say hello
+                <img src="./assets/whatsapp.svg" class="icon-small" alt="" /> Say hello on WhatsApp
               </a>
             </address>
           </div>
@@ -293,7 +458,7 @@
 
       <footer class="app-footer">
         <p>© <span id="current-year"></span> Debanshu Saha. All rights reserved.</p>
-        <p class="footer-location">Kolkata / Remote</p>
+        <p class="footer-location">Kolkata, India / Remote</p>
       </footer>
     </main>
   </div>
